@@ -1,0 +1,177 @@
+*{
+
+    user-select: none;
+}
+
+body { 
+
+    font-size: 20px;
+    margin:0;
+
+    
+}
+
+.formstart {
+
+    display: flex;
+    margin: 10% auto;
+    flex-flow: column wrap;
+    width: 100vw;
+    gap:30px;
+
+
+}
+
+.divstart {
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.formstart input {
+
+    width:20vw;
+}
+
+
+.formstart button {
+  
+margin: 0 auto;
+width: 140px;
+height: 30px;
+}
+
+.thegame {
+    display:none;
+}
+
+
+.board {
+    margin: 0 auto;
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+h1 {
+
+    margin: 5% auto;
+    width: 30vw;
+    text-align: center;
+
+
+    
+}
+
+.namesscores{
+
+    width:100%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.namesscores div {
+
+    width: 33vw;
+   
+}
+
+
+.ruta {
+width: 30%;
+height: 30%;
+border: 2px solid black; 
+font-size: 50px;
+display:flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+user-select: none;
+
+
+
+}
+
+.ruta:first-child,
+.ruta:nth-child(2),
+.ruta:nth-child(3) {
+
+    border-top:none;
+}
+
+.ruta:nth-child(3n+1) {
+    border-left: none;
+}
+
+.ruta:nth-child(3n+3){
+
+    border-right: none;
+}
+
+.ruta:last-child,
+.ruta:nth-child(8),
+.ruta:nth-child(7) {
+
+
+    border-bottom: none;
+}
+
+
+
+
+
+
+.winning {
+
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1em;;
+    
+}
+
+
+.winner
+{
+    display: flex;
+    
+}
+.winningtext {
+    font-size: 3rem;
+    
+}
+.winning button {
+
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .25em .5em;
+    cursor: pointer;
+
+}
+
+.winning button:hover {
+
+    background-color: black;
+    color:white;
+    border: solid 1px white;
+}
+
+

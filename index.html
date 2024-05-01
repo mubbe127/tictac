@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="tictactoe.css">
+    <script src="tictactoe.js" defer></script>
+</head>
+
+<body>
+
+
+    <h1>Tic Tac Toe</h1>
+
+    <form class="formstart" >
+        <div class="divstart">
+        <label for="first_player"> Name: </label>
+        <input type="text" id="first_player" >
+    </div>
+        <Button class="buttonstart" type="submit">Start game</Button>
+    </form>
+    
+
+    <div class="thegame">
+    <div class="namesscores">
+        <div><p id="playerscore1"></p> <p id="score1"> 0 </p></div>
+     
+        <div>   <p id="player-turn"></p>    </div>
+        <div><p id="playerscore2">Computer Score:</p    ><p id="score2"> 0</p>  </div>
+   
+    </div>
+   
+
+    <div id="gameboard" class="board">
+        <!-- Squares will be added dynamically -->
+
+    </div>
+
+    <div class="winning" id="winningID">
+    <p class="winningtext"></p>
+    <button id="restart-btn">Restart</button>
+    
+    </div>
+
+</div>
+
+    
+</body>
